@@ -1,0 +1,9 @@
+[Unit]
+Description=Updates the DNS records for a domain
+
+[Service]
+After=networking.target
+ExecStart=/usr/bin/python3 /path/to/script.py
+
+[Install]
+WantedBy=multi-user.target
